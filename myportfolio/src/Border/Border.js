@@ -1,11 +1,11 @@
 import './Border.css';
 
-export default function Border() {
+export default function Border({size, content}) {
   return (
-    <div className = "customOutterBox">
-        <div className = "cornerCutOut" />
-        <div className = "customInnerBox">
-            <h1>Box</h1>
+    <div className = {`customOutterBox-${size}`}>
+        <div className = {`cornerCutOut-${size}`} />
+        <div className = {`customInnerBox-${size}`}>
+          {content}
         </div>
     </div>
   );

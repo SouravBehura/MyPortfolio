@@ -1,10 +1,11 @@
 import './App.css';
-import Box from './Border/Border.js'
+import Border from './Border/Border.js'
+import Table from './Table/Table.js'
 
 function App() {
   return (
     <div className ="customBackground">
-    <Box />
+    <Border size={"big  "} content={<Table />}/>
     </div>
   );
 }

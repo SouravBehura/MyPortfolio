@@ -1,4 +1,6 @@
-.customOutterBox {
+/*------------Bigger Outer Box---------------*/
+
+.customOutterBox-big {
     position: absolute;
     top: 10vh;
     right: 10vh;
@@ -8,7 +10,43 @@
     color: #61dafb;
     background-image: repeating-linear-gradient(135deg, #36d1dc, #5b86e5 20%, #36d1dc 40%);
 }
-.cornerCutOut{
+
+.customOutterBox-big:hover {
+    position: absolute;
+    top: 9vh;
+    right: 9vh;
+    bottom: 9vh;
+    left: 9vh;
+    border-radius: 25px;
+    background-image: repeating-linear-gradient(135deg, #5b86e5, #36d1dc 20%, #5b86e5 40%);
+}
+
+/*------------Smaller Outer Box---------------*/
+
+.customOutterBox-small {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    bottom: 3vh;
+    left: 3vh;
+    border-radius: 25px;
+    color: #61dafb;
+    background-image: repeating-linear-gradient(135deg, #36d1dc, #5b86e5 20%, #36d1dc 40%);
+}
+
+.customOutterBox-small:hover {
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    bottom: 2vh;
+    left: 2vh;
+    border-radius: 25px;
+    background-image: repeating-linear-gradient(135deg, #5b86e5, #36d1dc 20%, #5b86e5 40%);
+}
+
+/*---------------Corner Cut--------------------*/
+
+.cornerCutOut-big{
     height: 100.3%;
     width: 100.3%;
     margin-left: -0.1%;
@@ -17,21 +55,22 @@
     clip-path: polygon(0 40%, 0 100%,60% 100%, 100% 60%, 100% 0, 40% 0);
     background-color: #041418;
 }
-.customOutterBox:hover {
-    position: absolute;
-    top: 9vh;
-    right: 9vh;
-    bottom: 9vh;
-    left: 9vh;
-    border-radius: 25px;
-    color: #61dafb;
-    text-align: center;
-    background-image: repeating-linear-gradient(135deg, #5b86e5, #36d1dc 20%, #5b86e5 40%);
+
+.cornerCutOut-small{
+    height: 100.3%;
+    width: 100.3%;
+    margin-left: -0.1%;
+    margin-top: -0.1%;
+    -webkit-clip-path: polygon(0 0, 0 60%,40% 100%, 100% 100%, 100% 40%, 60% 0);
+    clip-path: polygon(0 0, 0 60%,40% 100%, 100% 100%, 100% 40%, 60% 0);
+    background-color: #041418;
 }
 
-.customInnerBox {
+/*---------------Inner Box---------------------*/
+
+.customInnerBox-big {
     position: absolute;
-    top: 0.75vh;
+    top : 0.75vh;
     right: 0.75vh;
     bottom: 0.75vh;
     left: 0.75vh;
@@ -40,3 +79,17 @@
     text-align: center;
     background-color: #041418;
 }
+
+.customInnerBox-small{
+    position: absolute;
+    top : 0.37vh;
+    right: 0.37vh;
+    bottom: 0.37vh;
+    left: 0.37vh;
+    border-radius: 25px;
+    color: #61dafb;
+    text-align: center;
+    background-color: #f0f2f3;
+}
+
+/*-----------------END-----------------*/
