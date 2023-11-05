@@ -1,0 +1,30 @@
+.board{
+    position: relative;
+    left: 0%;
+    margin-right: 5%;
+    height: 50%;
+    font-size: 500%;
+    background-color: #041418;
+}
+
+.line{
+    position: relative;
+    top: 31%;
+    animation-delay: 2s;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards ;
+}
+
+.transparent{
+    position: absolute;
+    height: 34%;
+    width: 100%;
+    z-index: 1;
+    background-color: #041418;
+}
+
+@keyframes example {
+    0%   {top: 31%;}
+    100% {top: 0%;}
+}

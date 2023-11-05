@@ -8,11 +8,38 @@
     margin-left: 0%;
     right: 0%;
     height: 100%;
+    vertical-align: top;
+    text-align: left;
 }
 
 .rightCol{
     position: relative;
     right: 0%;
-    width: 30%;
+    width: 25%;
     height: 100%;
+}
+
+.list{
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+    cursor: pointer;
+    font-size: 110%;
+}
+
+.list:hover{
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+    cursor: pointer;
+    font-size: 130%;
+}
+
+.listGroup{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
