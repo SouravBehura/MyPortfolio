@@ -27,10 +27,10 @@ export default function Table(){
     }
 
     return(
-        <table className = "fullSize">
-            <tr className = "fullSize">
-                <td className = "leftCol">{containt}</td>
-                <td className = "rightCol">
+        <div className = "fullSize">
+            <div className = "fullSize" style={{display: "flex"}}>
+                <div className = "leftCol">{containt}</div>
+                <div className = "rightCol">
                     <Border size={"small"} content={
                         <div className="listGroup">
                             <div className = "list" onClick={() => {handleClick("Home")}}>Home</div>
@@ -38,8 +38,8 @@ export default function Table(){
                             <div className = "list" onClick={() => {handleClick("Projects")}}>Projects</div>
                         </div>
                     } />
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     );
 }

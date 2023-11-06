@@ -1,0 +1,15 @@
+.card{
+    position: relative;
+    height: 80%;
+    margin: 5%;
+    flex: 1 0 30%;
+    background-color: aliceblue;
+}
+
+.card:hover{
+    position: relative;
+    height: 80%;
+    margin: 4%;
+    flex: 1 0 31%;
+    background-color: aliceblue;
+}
